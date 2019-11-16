@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FoquitasPingui</title>
+        <link rel="icon" href="../img/logo2.jpg" />
+        <link rel="stylesheet" href="styles/fontello.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+    <body>
+        <header>
+            <div class="cont">
+                <a href="../index.html">
+                   <!-- <img id="imgLogo" src="../img/logo.png" alt="logo mis perris" />-->
+                </a> 
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="quien.html">¿Quiénes Somos?</a>
+                    
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form id="formulario" onsubmit="validate()" action="#">
+                <div class="contenedor">
+        
+                  <label for="txtEmail">Correo electrónico</label>
+                  <input id="txtEmail" tabindex="4" type="email" required
+                  placeholder="Ingrese su correo aquí">
+                  <br />
+        
+                  <label for="txtRun">Run:</label>
+                  <input id="txtRun" tabindex="5" type="text" required
+                  minlength="9" maxlength="10"
+                  onkeypress="runValidator()" onkeyup="runValidator()"
+                  placeholder="Ingrese su run aquí"/>
+                  <span id="runValidator" style="color:red"></span>
+                  <br />
+        
+        
+                  <label for="txtName">Nombres y Apellidos:</label>
+                  <input id="txtName" tabindex="6" type="text" required
+                   maxlength="50" minlength="2"
+                   placeholder="Ingrese su nombre completo"/>
+                   <span id="nameValidator" style="color:red"></span>
+                   <br/>
+        
+                   <label for="txtDate">Fecha de nacimiento:</label>
+                   <input id="txtDate" tabindex="7" type="date" required
+                   min="1960-12-31"  max="2000-12-31"/>
+        
+                   <br />
+        
+                   <label for="txtTel">Teléfono:</label>
+                   <input id="txtTel" tabindex="8" type="text" required
+                   minlength="9" maxlength="10"
+                   onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                   placeholder="Ingrese su número telefónico"/>
+                   <span id="telValidator" style="color:red"></span>
+                   <br />
+        
+                   <label for="txtRegion">Región:</label>
+                   <select id="txtRegion" tabindex="9" oninput="selectCity()">
+                   </select>
+                   <br />
+                   <label for="txtCity">Comuna</label>
+                   <select id="txtCity" tabindex="10">
+        
+                   </select>
+        
+        
+                   <br />
+        
+                   <label for="txtTipo">¿A quien apoyaras?</label>
+                   <select id="txtTipo" tabindex="11">
+                       <option >Pinguino</option>
+                       <option >Focas</option>              
+                   </select>
+                   <br/>
+        
+                   <button tabindex="12">Guardar</button>
+                  </div>
+                </form>
+        </main>
+
+            <footer>
+                <div class="cont">
+                    <p class="copy">Foquis &copy; 2019</p>
+                    <a href="tel:56998765431">
+                        <br>+569 9 876 654 31
+                    </a>
+                    
+                </div>
+            </footer>
+            <script src="../js/citySelector.js"></script>
+            <script src="../js/main.js"></script>
+    </body>
+</html>

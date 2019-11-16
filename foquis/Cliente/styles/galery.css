@@ -1,0 +1,22 @@
+.galery {
+    /* background:#7a9bd8; */
+    /* width: 94%; */
+    /* height: 20%; */
+    /* margin: 3%; */
+    /* border: 4px solid white; */
+    /* border-radius: 5%; */
+}
+
+.photos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.photos img{
+    height: 150px;
+    margin: 10px;
+    border-radius: 10%;
+}

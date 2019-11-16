@@ -1,0 +1,134 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Foquis</title>
+        <link rel="icon" href="img/logo.png" />
+        <link rel="stylesheet" href="styles/fontello.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="styles/banner.css">
+        <link rel="stylesheet" href="styles/blog.css">
+        <link rel="stylesheet" href="styles/carousel.css">
+        <link rel="stylesheet" href="styles/galery.css">
+        <link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.css" media="screen" />
+    </head>
+    <body>
+        <header>
+                <div class="cont">
+                        <a href="index.html">
+                            
+                        </a> 
+                       <input type="checkbox" id="menu-bar">
+                       <label class="icon-menu" for="menu-bar"></label>
+                       <img id="imgLogo" src="img/logo.png" alt="logo Foquis" />
+                       <nav class="menu">
+                            <a href="#">Inicio</a>
+                            <a href="quien.html">¿Quiénes Somos?</a>
+                            <a href="signup.html">REGÍSTRATE</a>
+                       </nav>
+                </div>
+        </header>
+
+        <main>
+                <div class="carousel">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="img/2.jpg" alt="Tom" />
+                                    <p class="flex-caption">"¡Estamos emocionados de tener un nuevo amiguito!"</p>
+                                </li>
+                                <li>
+                                    <img src="img/3.jpg" alt="Oliver"/>
+                                    <p class="flex-caption">"despues de un largo proceso oliver se ve en buenas condiciones"</p>
+                                </li>
+
+                                <li>
+                                        <img src="img/4.jpg" alt="Roco"/>
+                                        <p class="flex-caption">"Roco cada dia avanza mas en su recuperacion"</p>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="blog">
+                            <div class="cont">
+                                <article id="rescue">
+                                    <h2><b>RESCATE</b></h2>
+                                    <h3>ETAPA UNO</h3>
+                                    <h3>______</h3>
+                                    <h4>Rescatamos focas y pinguinos en situación de peligro. Los rehabilitamos y los </h4>
+                                    <br>
+                                    <h4>preparamos para buscarles un hogar en su habitad natural.</h4>
+                                    <img id="imgPinguino" src="img/pinguino1.jpg" alt="rescate">
+                                </article>
+            
+                                <article id="crowd">
+                                    <img id="imgfinanciamiento" src="img/financiamiento.jpg" alt="Financiamiento">
+                                    <br>
+                                    <h3>FINANCIAMIENTO</h3>
+                                    <br>
+                                    <h4>Sigue nuestras redes sociales para informarte acerca de las diversas campañas y</h4>
+                                    <br>
+                                    <h4>actividades que realizamos para obtener financiamiento para seguir ayudando.</h4>
+                                </article>
+                            </div>
+                        </div>
+            
+                        <div class="galery">
+                            <div class="photos">
+                                <a class="fancybox" href="img/2.jpg" data-fancybox-group="gallery" title="tommy">
+                                    <img src="img/2.jpg" alt="" />
+                                </a> 
+                                <a class="fancybox" href="img/3.jpg" data-fancybox-group="gallery" title="mia">
+                                    <img src="img/3.jpg" alt="" />
+                                </a> 
+                                <a class="fancybox" href="img/4.jpg" data-fancybox-group="gallery" title="cuchito">
+                                    <img src="img/4.jpg" alt="" />
+                                </a>
+                                <a class="fancybox" href="img/5.jpg" data-fancybox-group="gallery" title="sol">
+                                    <img src="img/5.jpg" alt="" />
+                                </a> 
+                                <a class="fancybox" href="img/6.jpg" data-fancybox-group="gallery" title="oliver">
+                                    <img src="img/6.jpg" alt="" />
+                                </a> 
+                                <a class="fancybox" href="img/7.jpg" data-fancybox-group="gallery" title="roco">
+                                    <img src="img/7.jpg" alt="" />
+                                </a>
+                                
+                            </div>
+                        </div>
+
+        </main>
+
+        <footer>
+                <div class="cont">
+                        <p class="copy">Foquis &copy; 2019</p>
+                        <a href="tel:+569-66 54 45">
+                            <br>+569 87 66 54 45
+                        </a>
+                        
+        </footer>
+        <script>
+                $(window).load(function() {
+                    $('.flexslider').flexslider({
+                        animation: "slide"
+                    });
+                });
+                </script>
+            
+                <script>
+                    $(document).ready(function() {
+                        $('.fancybox').fancybox({ keyboard : true });
+                     
+                    });
+                </script>
+    </body>
+</html>

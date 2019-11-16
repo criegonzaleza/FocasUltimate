@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #3868c0;
+    
+}
+
+#imgfinancimiento{
+    border-radius: 5px;
+    color: antiquewhite;
+    border: 4px solid antiquewhite;
+}
+
+#imgLogo {
+    border-radius: 5%;
+    padding: 7px;
+    width: 85px;
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #7a9bd8;
+    color: white;
+    border: 2px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+.cont{
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .cont{
+    display: table;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #7a9bd8;
+	color: white;
+	padding: 20px;
+	margin-top: 20px;
+    
+}
+
+.copy {
+    font-size: 20px;
+    
+}
+
+.social {
+    width: 100%;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 17px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a {
+	color: white;
+}
+
+@media (max-width:950px) {
+    header {
+        height: 50px;
+    }
+    #imgLogo {
+        padding: 4px;
+        height: 50px;
+    }
+}

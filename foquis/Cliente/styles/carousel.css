@@ -1,0 +1,27 @@
+.flex-caption {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.carousel {
+    width: 54.5%;
+    background-color: #7a9bd8;
+    border-radius: 1em;
+    margin: 5px auto;
+    padding: 1em;
+    margin-top: 80px;
+}
+
+@media (max-width:950px) {
+    #carousel{
+        margin-top: 60px;
+    }
+}
